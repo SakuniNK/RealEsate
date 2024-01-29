@@ -9,5 +9,6 @@ router = routers.DefaultRouter()
 router.register(r'users', views.CustomUserView, obtain_auth_token)
 
 urlpatterns = [
-    path("api/", include(router.urls))
+    path("api/", include(router.urls)),
+    path("account/", views.GetUserView),
 ]
