@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
 function FilterProperties(props) {
-  const [filteredProperties, setFilteredProperties] = useState([]);
+  // const [filteredProperties, setFilteredProperties] = useState([]);
 
-  useEffect(() => {
-    // Check if filtered properties are available in props.location.state
-    if (props && props.location && props.location.state && props.location.state.filteredProperties) {
-      setFilteredProperties(props.location.state.filteredProperties);
-    }
-  }, [props]);
+  // useEffect(() => {
+  //   // Check if filtered properties are available in props.location.state
+  //   if (props && props.location && props.location.state && props.location.state.filteredProperties) {
+  //     setFilteredProperties(props.location.state.filteredProperties);
+  //   }
+  // }, [props]);
   
 
   return (
@@ -30,12 +30,12 @@ function FilterProperties(props) {
                   aria-labelledby="pills-home"
                 >
                   <div className="row">
-                    {filteredProperties.map((property, index) => (
-                      <div key={property.id} className="col-md-6 col-lg-4">
+                    {/* {filteredProperties.map((property, index) => ( */}
+                      <div key="" className="col-md-6 col-lg-4">
                         <div className="featured-thumb hover-zoomer mb-4">
                           <div className="overlay-black overflow-hidden position-relative">
                             <img
-                              src={property.image}
+                              src=""
                               alt="pimage"
                               height={260}
                             />
@@ -43,25 +43,25 @@ function FilterProperties(props) {
                               New
                             </div>
                             <div className="sale bg-success text-white text-capitalize">
-                              For {property.type}
+                              For
                             </div>
                             <div className="price text-primary">
-                              <b>Rs.{property.price} </b>
+                              <b>Rs. </b>
                               <span className="text-white">
-                                {property.category}
+                                
                               </span>
                             </div>
                           </div>
                           <div className="featured-thumb-data shadow-one">
                             <div className="p-3">
                               <h5 className="text-secondary hover-text-success mb-2 text-capitalize">
-                                <a href={`/propertydetails/${property.id}`}>
-                                  {property.title}
+                                <a href="">
+                                  {/* {property.title} */}
                                 </a>
                               </h5>
                               <span className="location text-capitalize">
                                 <i className="fas fa-map-marker-alt text-success"></i>{" "}
-                                {property.location}
+                                {/* {property.location} */}
                               </span>
                             </div>
                             <div className="bg-gray quantity px-4 pt-4">
@@ -70,16 +70,16 @@ function FilterProperties(props) {
                                   <span>size</span> Sqft
                                 </li> */}
                                 <li>
-                                  <span>{property.bedroom}</span> Beds
+                                  <span></span> Beds
                                 </li>
                                 <li>
-                                  <span>{property.bathroom}</span> Baths
+                                  <span></span> Baths
                                 </li>
                                 <li>
-                                  <span>{property.kitchen}</span> Kitchen
+                                  <span></span> Kitchen
                                 </li>
                                 <li>
-                                  <span>{property.hall}</span> Hall
+                                  <span></span> Hall
                                 </li>
                               </ul>
                             </div>
@@ -97,7 +97,7 @@ function FilterProperties(props) {
                           </div>
                         </div>
                       </div>
-                    ))}
+                    {/* ))} */}
                   </div>
                 </div>
               </div>

@@ -1,7 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 
 function PropertySearch() {
+
+  // const navigate = useNavigate();
+
+  // const [formData, setFormData] = useState({
+  //   type: '',
+  //   stype: '',
+  //   city: '',
+  // });
+  
+  // const handleChange = (e) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
+  
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  
+  //   // You can use formData to make an API request to get filtered properties
+  //   try {
+  //     const response = await axios.post('http://localhost:8000/api/', formData);
+      
+  //     // Handle the response, update state, or navigate to a different page
+  //     console.log(response.data);
+  //     navigate('/filteredProperties', { state: { filteredProperties: response.data } });
+  //   } catch (error) {
+  //     // Handle errors
+  //     console.error('Error fetching filtered properties:', error);
+  //   }
+  // };
+
   return (
     <div
             className="overlay-black w-100 slider-banner1 position-relative"
@@ -12,7 +46,6 @@ function PropertySearch() {
               backgroundRepeat: "no-repeat",
             }}
           >
-            
             <div className="container h-100">
               <div className="row h-100 align-items-center">
                 <div className="col-lg-12">
@@ -22,7 +55,7 @@ function PropertySearch() {
                       <br />
                       Guide you Home
                     </h1>
-                    <form method="post" action="propertygrid.php">
+                    <form >
                       <div className="row">
                         <div className="col-md-6 col-lg-2">
                           <div className="form-group">
@@ -74,7 +107,6 @@ function PropertySearch() {
                 </div>
               </div>
             </div>
-           
           </div>
   )
 }
