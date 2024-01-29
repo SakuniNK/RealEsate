@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import CustomModal from '../components/Modal'
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,9 @@ function Contact() {
     message: "",
   });
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState('');
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -19,26 +23,21 @@ function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://your-django-backend/api/contact/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      // Your fetch request and logic here
 
-      const data = await response.json();
-
-      if (response.ok) {
-        // Handle success, e.g., show a success message
-        console.log("Message sent successfully");
-      } else {
-        // Handle error, e.g., show an error message
-        console.error("Failed to send message");
-      }
+      // If the request is successful, show a success message
+      setModalMessage('Message sent successfully');
+      setIsModalOpen(true);
     } catch (error) {
-      console.error("Error:", error);
+      // If there is an error, show an error message
+      setModalMessage('Failed to send message');
+      setIsModalOpen(true);
     }
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalMessage('');
   };
 
   return (
@@ -168,12 +167,14 @@ function Contact() {
                 </div>
               </div>
             </div>
+            <CustomModal isOpen={isModalOpen} closeModal={closeModal} message={modalMessage} />
           </div>
           {/* Contact Information */}
 
           {/* Map */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5644.408542716626!2d-117.1523848363907!3d32.73426737275872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d95495497f80c9%3A0x5df0f4372635e247!2sSan%20Diego%20Zoo!5e0!3m2!1sen!2snp!4v1658568764228!5m2!1sen!2snp"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7925.505577950238!2d79.95756132007994!3d6.92707956276576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2597e0ff3092f%3A0xdf87e378ea445d1!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2snp!4v1658568764228!5m2!1sen!2snp
+            "
             width="100%"
             height="400"
             style={{ border: 0 }}
