@@ -1,8 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://your-django-backend/api/contact/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        // Handle success, e.g., show a success message
+        console.log("Message sent successfully");
+      } else {
+        // Handle error, e.g., show an error message
+        console.error("Failed to send message");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
 
   return (
     <div>
@@ -68,7 +105,7 @@ function Contact() {
                     </div>
                     <div className="row">
                       <div className="col-md-12">
-                        <form className="w-100" action="#" method="post">
+                        <form className="w-100" onSubmit={handleSubmit}>
                           <div className="row">
                             <div className="row mb-4">
                               <div className="form-group col-lg-6">

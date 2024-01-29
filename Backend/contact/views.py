@@ -13,17 +13,13 @@ class ContactCreateView(APIView):
 
         try:
             send_mail(
-                data['subject'],
-                'Name :'
-                + data['name']
-                +'\nEmail: '
-                + data['email']
-                +'\n\nMessage:\n'
-                +data['message']
-                'realmetrix3@gmail.com',
-                ['realmetrix3@gmail.com'],
-                fail_silently=False
-            )
+    data['subject'],
+    'Name :' + data['name'] + '\nEmail: ' + data['email'] + '\n\nMessage:\n' + data['message'],
+    'realmetrix3@gmail.com',
+    ['realmetrix3@gmail.com'],
+    fail_silently=False
+)
+
 
             contact = Contact(name=data['name'], email=data['email'], subject=data['subject'], message=data['message'])
             contact.save()
