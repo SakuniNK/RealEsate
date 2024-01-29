@@ -65,17 +65,17 @@ function Register() {
                             onChange={handleChange}/>
                 <FaUserAlt className='register-icon' />
               </div>
-        <div className="input-box">
+        <div className="register-input-box">
             <input type="email" name='email' placeholder='Email' required value={formData.email}
                             onChange={handleChange}/>
             <MdEmail className= 'icon'/>
         </div>
-        <div className="input-box">
+        <div className="register-input-box">
             <input type="text" name='password' placeholder='Password' required value={formData.password}
                             onChange={handleChange}/>
             <FaLock className='icon' />
         </div>
-        <div className="input-box">
+        <div className="register-input-box">
             <input type="password" name='confirmPassword' placeholder='Confirm Password' required value={formData.confirmPassword}
                             onChange={handleChange}/>
             <FaLock className='icon' />

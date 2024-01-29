@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 function Contact() {
-  
+
   return (
     <div>
       <Navbar/>
@@ -27,12 +27,9 @@ function Contact() {
                         <div className="contact-address">
                           <h5 className="text-white">Address</h5>
                           <span className="text-white">
-                            27 Ingram Street, Dayton
+                           No.18, Passara Road, Badulla.
                           </span>{" "}
-                          <br />
-                          <span className="text-white">
-                            27 Ingram Street, Dayton
-                          </span>
+
                         </div>
                       </li>
                       <li className="d-flex mb-4">
@@ -41,9 +38,8 @@ function Contact() {
                         <div className="contact-address">
                           <h5 className="text-white">Call Us</h5>
                           <span className="d-table text-white">
-                            +1 234-567-8910
+                          +94 054 6578
                           </span>
-                          <span className="text-white">+1 243-765-4321 </span>
                         </div>
                       </li>
                       <li className="d-flex mb-4">
@@ -52,10 +48,7 @@ function Contact() {
                         <div className="contact-address">
                           <h5 className="text-white">Email Address</h5>
                           <span className="d-table text-white">
-                            helpline@realestatest.com
-                          </span>
-                          <span className="text-white">
-                            helpline@realestatest.com
+                          realmetrix@gmail.com
                           </span>
                         </div>
                       </li>

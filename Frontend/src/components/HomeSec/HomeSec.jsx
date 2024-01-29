@@ -10,7 +10,7 @@ function HomeSec() {
           <div className="row">
             <div className="col-md-6">
               <div className="about_taital">
-                <h1 className="highest_text">Residential Property Review</h1>
+                <h1 className="care_text">Residential Property Review</h1>
                 <p className="lorem_text">
                  Discover urban tranquility in this hidden gem located at the heart of the city.
                  Boasting a modern design flooded with natural light, 
