@@ -11,8 +11,8 @@ class CustomerSerializer(serializers.ModelSerializer):
             'required': True
         }}
 
-        def create(self, validated_data):
-        #token for user account and hashing password
-        user = CustomUser.objects.create_user(**validated_data)
-        Token.objects.create(user=user)
-        return user
+        # def create(self, validated_data):
+        # #token for user account and hashing password
+        # user = CustomUser.objects.create_user(**validated_data)
+        # Token.objects.create(user=user)
+        # return user

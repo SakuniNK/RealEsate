@@ -10,19 +10,18 @@ function HomeSec() {
           <div className="row">
             <div className="col-md-6">
               <div className="about_taital">
-                <h1 className="highest_text">GO WHERE YOU FEEL MOST ALIVE.</h1>
+                <h1 className="highest_text">Residential Property Review</h1>
                 <p className="lorem_text">
-                  Welcome to "Guide Me," your ultimate tour guide to Sri
-                  Lanka.Our website is dedicated to helping you create
-                  extraordinary and personalized travel experiences that
-                  resonate with your soul. From the sun-kissed beaches of the
-                  southern coast to the misty mountains of the central
-                  highlands, and the ancient ruins steeped in history to the
-                  vibrant cultural festivals, Sri Lanka has something to offer
-                  every traveler's unique passions and interests.
+                 Discover urban tranquility in this hidden gem located at the heart of the city.
+                 Boasting a modern design flooded with natural light, 
+                 this residential property offers spacious interiors, 
+                 a dream kitchen, and a master bedroom with panoramic city views. 
+                 The open-concept living space extends to a private garden and patio. 
+                 Residents enjoy community amenities such as a fitness center and 24/7 security, 
+                creating a perfect blend of convenience and serenity for a balanced lifestyle.
                 </p>
                 <div className="read_bt">
-                  <a href="/gig">PLAN YOUR TRIP</a>
+                  <a href="/gig">Buy Your Dream Home Now!</a>
                 </div>
               </div>
             </div>
@@ -57,22 +56,20 @@ function HomeSec() {
             </div>
             <div className="col-md-6">
               <div className="care_taital">
-                <h1 className="care_text">PLAN YOUR OWN TRIP</h1>
+                <h1 className="care_text">Commercial Property Review</h1>
                 <p className="ipsum_text">
-                  We believe that every traveler is unique, and their journey
-                  should reflect their individual tastes and preferences. With
-                  our user-friendly tools and comprehensive resources, we put
-                  the power in your hands to design a personalized itinerary
-                  that suits your interests and schedule. Browse through our
-                  curated travel guides, insider tips, and suggested itineraries
-                  to get inspired, and then mix and match to create a
-                  one-of-a-kind adventure. Whether you crave the thrill of
-                  wildlife safaris, the serenity of ancient temples, or the
-                  bliss of sandy beaches, "Guide Me" will assist you in crafting
-                  the perfect trip.
+                Nestled in the bustling business district, 
+                this commercial property redefines corporate spaces with its sleek design and functionality. 
+                The flexible office layouts, high-tech conference rooms, 
+                and well-connected location make it a prime choice for modern businesses. 
+                Embracing sustainability, the property incorporates green initiatives, 
+                promoting a healthy work environment. 
+                With accessibility and a commitment to excellence, 
+                this commercial space stands as a symbol of corporate sophistication and 
+                responsibility in the heart of the city.
                 </p>
                 <div className="read_bt">
-                  <a href="#">PLAN YOUR TRIP</a>
+                  <a href="#">Buy Your Dream Home Now!</a>
                 </div>
               </div>
             </div>
