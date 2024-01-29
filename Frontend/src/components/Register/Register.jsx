@@ -63,22 +63,22 @@ function Register() {
               <div className="register-input-box">
                 <input type="text" name='username' placeholder='Username' required value={formData.username}
                             onChange={handleChange}/>
-                <FaUserAlt className='register-icon' />
+                {/* <FaUserAlt className='register-icon' /> */}
               </div>
         <div className="register-input-box">
             <input type="email" name='email' placeholder='Email' required value={formData.email}
                             onChange={handleChange}/>
-            <MdEmail className= 'icon'/>
+            {/* <MdEmail className= 'icon'/> */}
         </div>
         <div className="register-input-box">
-            <input type="text" name='password' placeholder='Password' required value={formData.password}
+            <input type="password" name='password' placeholder='Password' required value={formData.password}
                             onChange={handleChange}/>
-            <FaLock className='icon' />
+            {/* <FaLock className='icon'/> */}
         </div>
         <div className="register-input-box">
             <input type="password" name='confirmPassword' placeholder='Confirm Password' required value={formData.confirmPassword}
                             onChange={handleChange}/>
-            <FaLock className='icon' />
+            {/* <FaLock className='icon'/> */}
         </div>
         
         <button type="submit" onClick={handleSubmit}>Register</button>

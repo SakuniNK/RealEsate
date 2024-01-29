@@ -94,11 +94,13 @@ DATABASES = {
     }
 }
 
-EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
+# settings.py
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'realmetrix3@gmail.com'
+EMAIL_HOST_PASSWORD = 'sftd ozfk amip lkom'
 EMAIL_USE_TLS = True
 
 

@@ -20,8 +20,8 @@ class ContactCreateView(APIView):
                 + data['email']
                 +'\n\nMessage:\n'
                 +data['message']
-                ''
-                ['']
+                'realmetrix3@gmail.com',
+                ['realmetrix3@gmail.com'],
                 fail_silently=False
             )
 
